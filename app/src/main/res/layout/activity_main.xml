@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/red"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="挂号系统"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <RadioGroup
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:layout_height="wrap_content">
+
+        <!-- 下部的图标点击会需要两张图片切换，字体的颜色也会切换 -->
+        <RadioButton
+            android:id="@+id/home_rb"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="首页"
+            android:drawableTop="@drawable/rb_home"
+            android:button="@null"
+            android:gravity="center"
+            android:drawablePadding="3dp"
+            android:layout_height="wrap_content"
+            android:checked="true" />
+        <RadioButton
+            android:id="@+id/dan_rb"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="挂号单"
+            android:drawableTop="@drawable/rb_dan"
+            android:button="@null"
+            android:gravity="center"
+            android:drawablePadding="3dp"
+
+            android:layout_height="wrap_content"
+            android:checked="false" />
+
+        <RadioButton
+            android:id="@+id/my_rb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/rb_my"
+
+            android:gravity="center"
+            android:text="我的" />
+    </RadioGroup>
+
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/yellow">
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:src="@drawable/image02" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/orange"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <TextView
+            android:clickable="true"
+            android:id="@+id/tv"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:text="初  诊"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/orange"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <TextView
+            android:clickable="true"
+            android:id="@+id/tv02"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:text="复 诊"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

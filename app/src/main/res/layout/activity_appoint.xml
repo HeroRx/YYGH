@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xiong="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    android:orientation="vertical">
+
+    <TextView
+        android:padding="10dp"
+        android:background="@color/red"
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="电子病历"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="2dp"
+                    android:textColor="@color/main_gray"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="排队流水号："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/a_queue"
+                    android:textSize="16sp"
+                    android:textColor="@color/main_gray"
+                    android:text="0000000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/nowcountname"
+                    android:padding="2dp"
+                    android:textColor="@color/main_gray"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="排队号："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/nowcount"
+                    android:textSize="16sp"
+                    android:textColor="@color/main_gray"
+                    android:text="05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <com.gzucm.yygh.view.ProportionImageView
+                android:layout_marginTop="5dp"
+                xiong:widthProportion = "19"
+                xiong:heightProportion="1.5"
+                android:src="@drawable/image03"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_margin="15dp"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/main_gray"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:text="门 诊 病 历"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/ten"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="2dp"
+                    android:textColor="@color/main_gray"
+                    android:textStyle="bold"
+                    android:text="姓名："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/a_name"
+                    android:textColor="@color/main_gray"
+                    android:autoLink="all"
+                    android:text="洪锐雄"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="2dp"
+                    android:textColor="@color/main_gray"
+                    android:textStyle="bold"
+                    android:text="性别："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/a_sex"
+                    android:textColor="@color/main_gray"
+                    android:autoLink="all"
+                    android:text="男"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="2dp"
+                    android:textColor="@color/main_gray"
+                    android:textStyle="bold"
+                    android:text="挂号号别："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/a_haobie"
+                    android:textColor="@color/red"
+                    android:autoLink="all"
+                    android:text="急诊"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="2dp"
+                    android:textColor="@color/main_gray"
+                    android:textStyle="bold"
+                    android:text="所挂的医生："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/a_yisheng"
+                    android:textColor="@color/main_gray"
+                    android:autoLink="all"
+                    android:text="吴伟"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="2dp"
+                    android:textColor="@color/main_gray"
+                    android:textStyle="bold"
+                    android:text="所挂科室："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/a_keshi"
+                    android:textColor="@color/main_gray"
+                    android:autoLink="all"
+                    android:text="心血管科"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:padding="2dp"
+                    android:textColor="@color/main_gray"
+                    android:textStyle="bold"
+                    android:text="医生诊室号码："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/a_keshihao"
+                    android:textColor="@color/main_gray"
+                    android:autoLink="all"
+                    android:text="305"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="2dp"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"
+                    android:text="药物过敏史："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/a_guomin"
+                    android:textColor="@color/red"
+                    android:autoLink="all"
+                    android:text="暂无"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <Button
+                android:id="@+id/yes"
+                android:background="@color/yellow"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="30.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="28.0dip"
+                android:padding="10dp"
+                android:text="确 认"
+                android:textColor="@color/red"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:id="@+id/rg_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="性别">
+
+        <RadioButton
+            android:id="@+id/rb31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="是"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="否"></RadioButton>
+    </RadioGroup>
+
+</LinearLayout>

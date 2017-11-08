@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    android:orientation="vertical">
+    <TextView
+        android:padding="10dp"
+        android:background="@color/red"
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="支 付"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/red"
+                    android:textSize="15sp"
+                    android:text="缴费方式: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <include
+                    layout="@layout/layout_payway"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/red"
+                    android:textSize="15sp"
+                    android:text="挂号级别: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <include
+                    layout="@layout/layout_way"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/red"
+                    android:textSize="15sp"
+                    android:text="是否购买广州通用病历： "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <include
+                    layout="@layout/layout_paybingli"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/red"
+                    android:textSize="15sp"
+                    android:text="结算方式: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <include
+                    layout="@layout/layout_paymoney"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/red"
+                    android:textSize="15sp"
+                    android:text="费别: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <include
+                    layout="@layout/layout_feibie"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_yes"
+                android:background="@color/orange"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="30.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="28.0dip"
+                android:padding="10dp"
+                android:text="确 定"
+                android:textColor="@color/red"
+                android:textSize="15sp"
+                />
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:text="患者："
+                    android:textColor="@color/main_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_pname"
+                    android:text="肖某某"
+                    android:textColor="@color/main_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:layout_gravity="center"
+                    android:text="应缴纳："
+                    android:textColor="@color/main_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/money"
+                    android:text="10"
+                    android:textColor="@color/main_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="元"
+                    android:textColor="@color/main_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@color/orange"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:text="已收取："
+                    android:textColor="@color/main_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:layout_gravity="center"
+                    android:id="@+id/et_money"
+                    android:textSize="13sp"
+                    android:textColor="#ff424242"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:hint="请输入实际收取金额"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/getmoney"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:text="元"
+                    android:textColor="@color/main_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@color/orange"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:text="找回："
+                    android:textColor="@color/main_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/returnmoney"
+                    android:text="0.0"
+                    android:textColor="@color/main_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+
+                    android:text="元"
+                    android:textColor="@color/main_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_dayin"
+                android:background="@color/orange"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="30.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="28.0dip"
+                android:padding="10dp"
+                android:text="打印病历"
+                android:textColor="@color/red"
+                android:textSize="15sp"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

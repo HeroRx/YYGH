@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:id="@+id/rg_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="性别">
+
+        <RadioButton
+            android:id="@+id/rb11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="自费"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="工费"></RadioButton>
+        <RadioButton
+            android:id="@+id/rb13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="医保"></RadioButton>
+    </RadioGroup>
+
+</LinearLayout>

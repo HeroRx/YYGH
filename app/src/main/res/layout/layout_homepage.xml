@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+
+        android:background="@color/orange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="1dp"
+            android:id="@+id/ll01"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/orange"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/image04" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="急诊挂号"
+                android:textColor="@color/title_black" />
+
+            <TextView
+                style="@style/width_match_height_wrap"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="急诊类别"
+                android:textColor="#B4B4B4"
+                android:textSize="10dp" />
+        </LinearLayout>
+        <View
+            android:background="@color/gray"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:id="@+id/ll02"
+            style="@style/height_wrap_width_weight"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="1dp"
+            android:background="@color/orange"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                style="@style/wrap_content"
+                android:layout_marginTop="7dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/image05" />
+
+            <TextView
+                style="@style/wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="按科室挂号"
+                android:textColor="@color/title_black"
+                android:textSize="14sp" />
+
+            <TextView
+                style="@style/width_match_height_wrap"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="门诊类别"
+                android:textColor="#B4B4B4"
+                android:textSize="10dp" />
+        </LinearLayout>
+        <View
+            android:background="@color/gray"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:id="@+id/ll03"
+            style="@style/height_wrap_width_weight"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="1dp"
+            android:background="@color/orange"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                style="@style/wrap_content"
+                android:layout_marginTop="7dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/image06" />
+
+            <TextView
+                style="@style/wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="找教授挂号"
+                android:textColor="@color/title_black"
+                android:textSize="14sp" />
+
+            <TextView
+                style="@style/width_match_height_wrap"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:lines="2"
+                android:text="特诊类别"
+                android:textColor="#B4B4B4"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        style="@style/width_match_height_wrap"
+         >
+        <LinearLayout
+            android:id="@+id/ll04"
+            style="@style/height_wrap_width_weight"
+            android:layout_centerInParent="true"
+            android:background="@color/orange"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                style="@style/wrap_content"
+                android:layout_marginTop="7dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/image07" />
+
+            <TextView
+                style="@style/wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="找医生挂号"
+                android:textColor="@color/title_black"
+                android:textSize="14sp" />
+
+            <TextView
+                style="@style/width_match_height_wrap"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="门诊类别"
+                android:textColor="#B4B4B4"
+                android:textSize="10dp" />
+        </LinearLayout>
+        <View
+            android:background="@color/gray"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll05"
+            style="@style/height_wrap_width_weight"
+            android:background="@color/orange"
+
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                style="@style/wrap_content"
+                android:layout_marginTop="7dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/image08" />
+
+            <TextView
+                style="@style/wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="按日期挂号"
+                android:textColor="@color/title_black"
+                android:textSize="14sp" />
+
+            <TextView
+                style="@style/width_match_height_wrap"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="门诊类别"
+                android:textColor="#B4B4B4"
+                android:textSize="10dp" />
+        </LinearLayout>
+        <View
+            android:background="@color/gray"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:id="@+id/ll06"
+            style="@style/height_wrap_width_weight"
+            android:layout_alignParentRight="true"
+            android:background="@color/orange"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                style="@style/wrap_content"
+                android:layout_marginTop="7dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/image09" />
+
+            <TextView
+                style="@style/wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="待添加"
+                android:textColor="@color/title_black"
+                android:textSize="14sp" />
+
+            <TextView
+                style="@style/width_match_height_wrap"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="待添加"
+                android:textColor="#B4B4B4"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

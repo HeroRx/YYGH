@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/orange"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:text="急诊挂号"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:paddingLeft="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/image04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:background="@color/yellow"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/orange"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:text="按日期挂号"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:paddingLeft="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/image05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:background="@color/yellow"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/orange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingTop="15dp"
+                android:layout_gravity="center"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:text="找科室挂号"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:paddingLeft="5dp"
+                android:layout_gravity="center"
+                android:src="@drawable/image05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:padding="5dp"
+                android:hint="请输入科室(必填)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/right_arrow"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/yellow"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/orange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingTop="15dp"
+                android:layout_gravity="center"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:text="找医生挂号"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:paddingLeft="5dp"
+                android:layout_gravity="center"
+                android:src="@drawable/image05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:padding="5dp"
+                android:hint="请输入医生(必填)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/right_arrow"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/yellow"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/orange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingTop="15dp"
+                android:layout_gravity="center"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:text="找教授挂号"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:paddingLeft="5dp"
+                android:layout_gravity="center"
+                android:src="@drawable/image06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:padding="5dp"
+                android:hint="请输入教授(必填)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/right_arrow"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

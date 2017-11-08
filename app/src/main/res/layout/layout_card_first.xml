@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:xiong="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_margin="10dp"
+        android:background="@drawable/background_login_div"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <LinearLayout
+            android:background="@drawable/background_login_div"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/image03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.gzucm.yygh.view.ProportionImageView
+                xiong:widthProportion = "1.6"
+                xiong:heightProportion="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/red"
+                android:textSize="30sp"
+                android:text="No."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_card_first"
+                android:textColor="@color/red"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:text="暂未添加诊疗卡"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+

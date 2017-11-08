@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:id="@+id/rg_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <RadioButton
+            android:id="@+id/rb21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="普通"></RadioButton>
+        <RadioButton
+            android:id="@+id/rb22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="主任医师"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="教授"></RadioButton>
+        <RadioButton
+
+            android:id="@+id/rb24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="副教授"></RadioButton>
+    </RadioGroup>
+
+</LinearLayout>
